@@ -13,6 +13,7 @@ export default function AllNews() {
   async function FetchNews() {
     const response = await GetAllNews("technology");
     setArticles(response.data.articles);
+    console.log((response.data.articles);
   }
 
   React.useEffect(() => {
